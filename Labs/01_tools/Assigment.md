@@ -9,12 +9,12 @@ Link to your `Digital-electronics-2` GitHub repository:
 ### Blink example
 
 1. What is the meaning of the following binary operators in C?
-   * `|`
-   * `&`
-   * `^`
-   * `~`
-   * `<<`
-   * `>>`
+   * `|` : or
+   * `&` : and
+   * `^` : xor
+   * `~` : complement
+   * `<<` : shift left
+   * `>>` : shift right
 
 2. Complete truth table with operators: `|`, `&`, `^`, `~`
 
