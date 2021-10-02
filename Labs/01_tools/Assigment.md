@@ -1,5 +1,5 @@
 
-# Lab 1: GABRIEL TAFFIN
+# Lab 1 : GABRIEL TAFFIN
 
 Link to my `Digital-electronics-2` GitHub repository:
 
