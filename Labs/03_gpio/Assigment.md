@@ -1,8 +1,8 @@
-# Lab 3: YOUR_FIRSTNAME FAMILYNAME
+# Lab 3: GABRIEL TAFFIN
 
-Link to your `Digital-electronics-2` GitHub repository:
+Link to my `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   [https://github.com/GabrielTfi/Digital-Electronics-2/](https://github.com/GabrielTfi/Digital-Electronics-2/)
 
 
 ### Data types in C
@@ -22,10 +22,8 @@ Link to your `Digital-electronics-2` GitHub repository:
 ### GPIO library
 
 1. In your words, describe the difference between the declaration and the definition of the function in C.
-   * Function declaration
-          prototype of the function
-   * Function definition
-          the function itself
+   * Function declaration : it corresponds to the prototype of the function. It gives the type of return of the funtion, its name and parameters.
+   * Function definition : it corresponds to the function itself. It is the code of the function. 
 
 2. Part of the C code listing with syntax highlighting, which toggles LEDs only if push button is pressed. Otherwise, the value of the LEDs does not change. Use function from your GPIO library. Let the push button is connected to port D:
 
@@ -36,10 +34,15 @@ Link to your `Digital-electronics-2` GitHub repository:
     // Infinite loop
     while (1)
     {
-        // Pause several milliseconds
-        _delay_ms(BLINK_DELAY);
-
-        // WRITE YOUR CODE HERE
+        _delay_ms(10);
+		
+		if (bit_is_clear(PIND,BTN)){
+			
+			GPIO_toggle(&PORTB, LED_GREEN);
+			GPIO_toggle(&PORTC, LED_RED);
+			
+			_delay_ms(500);
+		}
     }
 ```
 
@@ -48,4 +51,4 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 1. Scheme of traffic light application with one red/yellow/green light for cars and one red/green light for pedestrians. Connect AVR device, LEDs, resistors, one push button (for pedestrians), and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
 
-   ![your figure]()
+   ![trafic lights circuit](https://i.postimg.cc/NMtQKKYp/Capture.png)
