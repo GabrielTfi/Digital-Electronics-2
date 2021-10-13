@@ -36,13 +36,13 @@ Link to my `Digital-electronics-2` GitHub repository:
     {
         _delay_ms(10);
 		
-		if (bit_is_clear(PIND,BTN)){
-			
-			GPIO_toggle(&PORTB, LED_GREEN);
-			GPIO_toggle(&PORTC, LED_RED);
-			
-			_delay_ms(500);
-		}
+	if (bit_is_clear(PIND,BTN)){
+
+		GPIO_toggle(&PORTB, LED_GREEN);
+		GPIO_toggle(&PORTC, LED_RED);
+
+		_delay_ms(500);
+	}
     }
 ```
 
