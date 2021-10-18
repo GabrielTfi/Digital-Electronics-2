@@ -1,6 +1,6 @@
 # Lab 4: Gabriel Taffin
 
-Link to your `Digital-electronics-2` GitHub repository:
+Link to my `Digital-electronics-2` GitHub repository:
 
    [https://github.com/GabrielTfi/Digital-Electronics-2/](https://github.com/GabrielTfi/Digital-Electronics-2/)
 
