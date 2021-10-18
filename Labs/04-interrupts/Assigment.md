@@ -1,8 +1,8 @@
-# Lab 4: YOUR_FIRSTNAME FAMILYNAME
+# Lab 4: Gabriel Taffin
 
 Link to your `Digital-electronics-2` GitHub repository:
 
-   [https://github.com/...](https://github.com/...)
+   [https://github.com/GabrielTfi/Digital-Electronics-2/](https://github.com/GabrielTfi/Digital-Electronics-2/)
 
 
 ### Overflow times
