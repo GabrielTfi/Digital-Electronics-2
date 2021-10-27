@@ -18,10 +18,11 @@ Use schematic of the [LCD keypad shield](../../Docs/arduino_shield.pdf) and find
    | **LCD signal(s)** | **AVR pin(s)** | **Description** |
    | :-: | :-: | :-- |
    | RS | PB0 | Register selection signal. Selection between Instruction register (RS=0) and Data register (RS=1) |
-   | R/W |  |  |
-   | E |  |  |
-   | D[3:0] |  |  |
-   | D[7:4] |  |  |
+   | R/W | Gnd | identifies read or write operation |
+   | E | PB1 | a trigger signal whose edge synchronizes the communication on
+the bus |
+   | D[3:0] | not connected | Data bus line |
+   | D[7:4] | PD4 to PD7 | Data bus line |
 
 What is the ASCII table? What are the codes/values for uppercase letters `A` to `Z`, lowercase letters `a` to `z`, and numbers `0` to `9` in this table?
 
