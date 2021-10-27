@@ -19,8 +19,7 @@ Use schematic of the [LCD keypad shield](../../Docs/arduino_shield.pdf) and find
    | :-: | :-: | :-- |
    | RS | PB0 | Register selection signal. Selection between Instruction register (RS=0) and Data register (RS=1) |
    | R/W | Gnd | identifies read or write operation |
-   | E | PB1 | a trigger signal whose edge synchronizes the communication on
-the bus |
+   | E | PB1 | a trigger signal whose edge synchronizes the communication on the bus |
    | D[3:0] | not connected | Data bus line |
    | D[7:4] | PD4 to PD7 | Data bus line |
 
@@ -29,14 +28,13 @@ What is the ASCII table? What are the codes/values for uppercase letters `A` to 
    | **Char** | **Decimal** | **Hexadecimal** |
    | :-: | :-: | :-: |
    | `A` | 65 | 0x41 |
-   | `B` |  |  |
-   | ... |  |  |
+   | `B` | 66 | 0x42 |
+   | ... | +1 | +1 |
    | `a` | 97 | 0x61 |
-   | `b` |  |  |
-   | ... |  |  |
+   | `b` | 98 | 0x62 |
+   | ... | +1 | +1 |
    | `0` | 48 | 0x30 |
-   | `1` |  |  |
-   | ... |  |  |
-
+   | `1` | 49 | 0x31 |
+   | ... | +1 | +1 |
 
 <a name="part1"></a>
