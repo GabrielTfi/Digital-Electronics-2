@@ -29,8 +29,15 @@ Link to your `Digital-electronics-2` GitHub repository:
 ```c
 /* Variables ---------------------------------------------------------*/
 // Custom character definition
-uint8_t customChar[16] = {
-    // WRITE YOUR CODE HERE
+uint8_t customChar[8] = {
+	0b11111,
+	0b00100,
+	0b00100,
+	0b11011,
+	0b01110,
+	0b10101,
+	0b10001,
+	0b11111
 };
 ```
 
