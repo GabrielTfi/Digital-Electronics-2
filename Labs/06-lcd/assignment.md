@@ -1,4 +1,4 @@
-# Lab 6: YOUR_FIRSTNAME FAMILYNAME
+# Lab 6: GABRIEL TAFFIN
 
 Link to your `Digital-electronics-2` GitHub repository:
 
@@ -12,7 +12,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 
 2. (Hand-drawn) picture of time signals between ATmega328P and LCD keypad shield (HD44780 driver) when transmitting three character data `De2`.
 
-   ![your figure]()
+   ![time signals between ATmega328P and LCD keypad shield](https://raw.githubusercontent.com/GabrielTfi/Digital-Electronics-2/main/Labs/06-lcd/lcd_signals.jpg)
 
 
 ### Stopwatch
