@@ -8,7 +8,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 ### LCD display module
 
 1. In your words, describe what ASCII table is.
-   * ASCII table:
+   * ASCII table: 7 bits standard code which permits the encoding of characters.
 
 2. (Hand-drawn) picture of time signals between ATmega328P and LCD keypad shield (HD44780 driver) when transmitting three character data `De2`.
 
@@ -29,7 +29,7 @@ Link to your `Digital-electronics-2` GitHub repository:
 ```c
 /* Variables ---------------------------------------------------------*/
 // Custom character definition
-uint8_t customChar[8] = {
+uint8_t customChar1[8] = {
 	0b11111,
 	0b00100,
 	0b00100,
@@ -38,6 +38,17 @@ uint8_t customChar[8] = {
 	0b10101,
 	0b10001,
 	0b11111
+};
+
+uint8_t customChar2[8] = {
+	0b10011,
+	0b00111,
+	0b11100,
+	0b11011,
+	0b01100,
+	0b11111,
+	0b10101,
+	0b11011
 };
 ```
 
