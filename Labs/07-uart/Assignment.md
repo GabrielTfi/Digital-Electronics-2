@@ -49,6 +49,8 @@ ISR(ADC_vect)
 	lcd_puts("    ");
 	lcd_gotoxy(8,0);
 	lcd_puts(lcd_string);
+	
+	
 }
 ```
 
