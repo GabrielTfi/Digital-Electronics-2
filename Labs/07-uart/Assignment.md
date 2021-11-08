@@ -31,30 +31,36 @@ ISR(ADC_vect)
 	char lcd_string[4] = "0000";
 	value = ADC;                  // Copy ADC result to 16-bit variable
 	
+	itoa(value, lcd_string, 10);
+	lcd_gotoxy(0,0);
+	lcd_puts("    ");
+	lcd_gotoxy(0,0);
+	lcd_puts(lcd_string);
+	
 	uart_puts(lcd_string);
 	uart_puts("  ");
 	
-	lcd_gotoxy(0,0);
+	lcd_gotoxy(0,1);
 	lcd_puts("       ");
-	lcd_gotoxy(0,0);
+	lcd_gotoxy(0,1);
 	
-	if (value > 1000){
-		lcd_puts("none");
-	}
-	else if (value > 600){
+	if (value == 650){
 		lcd_puts("select");
 	}
-	else if (value > 300){
+	else if (value == 402){
 		lcd_puts("left");
 	}
-	else if (value > 200){
+	else if (value == 245){
 		lcd_puts("down");
 	}
-	else if (value > 90){
+	else if (value == 101){
 		lcd_puts("up");
 	}
-	else if (value >= 0){
+	else if (value == 0){
 		lcd_puts("right");
+	}
+	else{
+		lcd_puts("none");
 	}
 	
 	
