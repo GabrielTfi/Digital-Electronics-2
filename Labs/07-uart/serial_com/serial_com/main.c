@@ -108,8 +108,9 @@ ISR(ADC_vect)
 	uint16_t value = 0; 
 	
 	char lcd_string[4] = "0000";
-	
 	value = ADC; 
+	
+	
 	itoa(value, lcd_string, 10);
 	lcd_gotoxy(0,0);
 	lcd_puts("    ");
@@ -122,29 +123,43 @@ ISR(ADC_vect)
 	uart_puts("  ");
 	
 	//Display ADC value in hexa at position "b"
-	
+	/*
 	itoa(value, lcd_string, 16);
 	lcd_gotoxy(8,0);
 	lcd_puts("    ");
 	lcd_gotoxy(8,0);
 	lcd_puts(lcd_string);
 	
-	//Display what button was pressed at position "c"
-	/*
-	char lcd_string2[6] = "none";
-	if ( value == 1022) lcd_string2 = "none";
-	if (value == 0) lcd_string2 = "right";
-	if (value == 101) lcd_string2 = "up";
-	if (value == 245) lcd_string2 = "down";
-	if (value == 402) lcd_string2 = "left";
-	if (value == 650) lcd_string2 = "select";
-	
-	lcd_gotoxy(0,1);
-	lcd_puts("      ");
-	lcd_gotoxy(0,1);
-	lcd_puts(lcd_string2);
-	
+	lcd_gotoxy(0,0);
+	lcd_puts("       ");
+	lcd_gotoxy(0,0);
 	*/
+	lcd_gotoxy(0,1);
+	lcd_puts("       ");
+	lcd_gotoxy(0,1);
+	
+
+	if (value == 650){
+		lcd_puts("select");
+	}
+	else if (value == 402){
+		lcd_puts("left");
+	}
+	else if (value == 245){
+		lcd_puts("down");
+	}
+	else if (value == 101){
+		lcd_puts("up");
+	}
+	else if (value == 0){
+		lcd_puts("right");
+	}
+	else{
+		lcd_puts("none");
+	}
+	
+	//Display what button was pressed at position "c"
+
 	
 	
 }
