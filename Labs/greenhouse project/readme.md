@@ -10,7 +10,7 @@
 
 Link to this file in your GitHub repository:
 
-[https://github.com/AkaiRyussei/Digital-electronics-2/tree/main/Green%20House%20Project](https://github.com/AkaiRyussei/Digital-electronics-2/tree/main/Green%20House%20Project)
+[https://github.com/GabrielTfi/Digital-Electronics-2/blob/main/Labs/greenhouse project/](https://github.com/GabrielTfi/Digital-Electronics-2/blob/main/Labs/greenhouse project/)
 
 ### Table of contents
 
